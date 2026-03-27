@@ -1,9 +1,15 @@
 :root {
   --success: rgb(16, 238, 49);
   --fail: #f00505;
-  --box-bg: linear-gradient(174deg, #131361, #1f161673);
-  --box-shadow: 0px 0px 5px #191515;
+  --box-bg: #ffffff;
+  --box-shadow: 0px 0px 5px #bcbcbc;
   --btn-primary: rgb(16, 42, 238);
+  --bg: #ffffff;
+  --text: #000000;
+}
+body.dark-theme{
+  --box-bg: linear-gradient(179deg, #4646b9, #1f161673);
+  --box-shadow: 0px 0px 5px #191515;
   --bg: #0c0c2e;
   --text: #b0b0b0;
 }
@@ -74,7 +80,7 @@ form{
 }
 .input-field input {
   border-radius: inherit;
-  background: inherit;
+  background: transparent;
 }
 
 input[type=text] {
@@ -104,6 +110,9 @@ input[type=radio] {
   width: 100px;
   height: 100px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .language-picker label .label-box-outline {
   position: absolute;
