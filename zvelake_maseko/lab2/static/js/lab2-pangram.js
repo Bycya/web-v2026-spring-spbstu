@@ -52,7 +52,7 @@ function initializeExamples(){
     container.appendChild(ul);
 }
 
-function clearResults(){
+function clearAlerts(){
     document.querySelectorAll('.alert').forEach(al => al.remove());
 }
 
@@ -63,17 +63,18 @@ document.addEventListener('DOMContentLoaded', ()=>{
     
     form.addEventListener('submit', function(e){
         e.preventDefault();
-        clearResults();
-        submitBtn.disabled = true;
-        document.querySelector('.loader').style.setProperty('display', 'block');
+        clearAlerts();
         
         let formData = new FormData(form);
         let lang = formData.get('language');
         let phrase = formData.get('word');
         if(phrase.length === 0){
             form.appendChild(makeAltert('<P>поле пустой</p>', 'error'));
+            setTimeout(()=>{clearAlerts();}, 2000);
             return;
         }
+        submitBtn.disabled = true;
+        document.querySelector('.loader').style.setProperty('display', 'block');
         
         let result = isPangram(phrase, lang);
         let responseMessage = `<p>${result[0] ? '<i class="fa-solid fa-circle-check"></i><span>Является панграммой</span>' : '<i class="fa-solid fa-x"></i><span>Не Является панграммой</span>'}</p>`;
