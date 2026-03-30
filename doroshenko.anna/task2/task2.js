@@ -40,8 +40,11 @@ function findDegree(num, divider)
 
 function isPerfectNumber(num)
 {
+    if(!Number.isInteger(num) || (num <= 1))
+    {
+        return false;
+    }
     let arrOfSimpDiv = findSimpleDividers(num);
-    console.log(arrOfSimpDiv);
     let result = 1;
     let degree = 0;
     for (let divider of arrOfSimpDiv)
