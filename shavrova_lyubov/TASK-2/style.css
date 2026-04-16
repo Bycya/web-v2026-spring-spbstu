@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    margin: 50px;
+    background: #f0f0f0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+input {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 3px;
+}
