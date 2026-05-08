@@ -1,0 +1,207 @@
+.filters {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 24px;
+  width: 240px;
+  flex-shrink: 0;
+  align-self: flex-start;
+  position: sticky;
+  top: 80px;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.sectionTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 14px;
+}
+
+/* ── Dual range slider ── */
+
+.priceLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--dark-gray);
+  margin-bottom: 12px;
+}
+
+.sliderWrapper {
+  position: relative;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sliderTrack {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.sliderRange {
+  position: absolute;
+  height: 100%;
+  background: var(--blue);
+  border-radius: 2px;
+}
+
+.rangeInput {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: none;
+  outline: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.rangeInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--blue);
+  cursor: pointer;
+  pointer-events: all;
+  box-shadow: 0 1px 4px rgba(0, 91, 255, 0.25);
+  transition: box-shadow var(--transition);
+}
+
+.rangeInput::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 6px rgba(0, 91, 255, 0.12);
+}
+
+.rangeInput::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--blue);
+  cursor: pointer;
+  pointer-events: all;
+  box-shadow: 0 1px 4px rgba(0, 91, 255, 0.25);
+}
+
+.rangeInput::-moz-range-track {
+  background: none;
+}
+
+/* ── Checkboxes ── */
+
+.checkList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkLabel {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--blue);
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.checkText {
+  font-size: 14px;
+  color: var(--dark-gray);
+  line-height: 1.3;
+}
+
+/* ── Colors ── */
+
+.colorGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.colorLabel {
+  cursor: pointer;
+}
+
+.hiddenCheck {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.colorCircle {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all var(--transition);
+}
+
+.colorActive {
+  box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--blue);
+}
+
+/* ── Buttons ── */
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.btnApply {
+  padding: 11px;
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background var(--transition);
+}
+
+.btnApply:hover {
+  background: var(--blue-hover);
+}
+
+.btnReset {
+  padding: 11px;
+  background: none;
+  color: var(--dark-gray);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all var(--transition);
+}
+
+.btnReset:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}

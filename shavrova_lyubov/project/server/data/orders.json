@@ -1,0 +1,73 @@
+[
+  {
+    "id": "d351be91-fc32-472f-a72e-0888c0d200f6",
+    "date": "2026-05-08T14:47:46.174Z",
+    "phone": "паполпр",
+    "email": "",
+    "delivery": "delivery",
+    "address": "3456",
+    "payment": "online",
+    "packaging": true,
+    "items": [
+      {
+        "id": 32,
+        "title": "Дыхательный тренажер O2in Pro Violet",
+        "image": "image_32.png",
+        "price": 15990,
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "id": "99e10878-db68-4389-b6d3-e2d7df57479b",
+    "date": "2026-05-08T14:54:46.226Z",
+    "phone": "89627243673",
+    "email": "",
+    "delivery": "pickup",
+    "address": "",
+    "payment": "card",
+    "packaging": false,
+    "items": [
+      {
+        "id": 23,
+        "title": "Беспроводная акустика, голубой",
+        "image": "image_23.png",
+        "price": 2499,
+        "quantity": 1
+      },
+      {
+        "id": 14,
+        "title": "Наушники True Wireless HUAWEI FreeBuds SE 2, синие",
+        "image": "image_14.png",
+        "price": 3990,
+        "quantity": 1
+      },
+      {
+        "id": 8,
+        "title": "Смартфон Samsung Galaxy A55 5G 256 ГБ белый",
+        "image": "image_8.png",
+        "price": 43999,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "4655e242-a24f-4944-a578-c191b48e7541",
+    "date": "2026-05-08T14:55:46.140Z",
+    "phone": "89875673421",
+    "email": "",
+    "delivery": "delivery",
+    "address": "234562345678909876543456789098765456789098",
+    "payment": "card",
+    "packaging": true,
+    "items": [
+      {
+        "id": 14,
+        "title": "Наушники True Wireless HUAWEI FreeBuds SE 2, синие",
+        "image": "image_14.png",
+        "price": 3990,
+        "quantity": 4
+      }
+    ]
+  }
+]

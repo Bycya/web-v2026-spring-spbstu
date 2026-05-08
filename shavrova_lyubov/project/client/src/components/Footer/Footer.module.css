@@ -1,0 +1,84 @@
+.footer {
+  background: var(--blue-dark);
+  color: var(--white);
+  padding: 32px 0;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.logoBlue {
+  color: var(--blue);
+}
+
+.tagline {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.copy {
+  font-size: 12px;
+  opacity: 0.5;
+  margin-top: 8px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact {
+  color: var(--white);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.9;
+  transition: opacity var(--transition);
+}
+
+.contact:hover {
+  opacity: 1;
+}
+
+.social {
+  display: flex;
+  gap: 12px;
+}
+
+.socialLink {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialLink:hover {
+  transform: scale(1.1);
+}
+
+.socialLink img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}

@@ -1,0 +1,105 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: var(--white);
+  border-radius: var(--radius);
+  margin-bottom: 8px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--blue);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.image {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.price {
+  font-size: 13px;
+  color: var(--gray);
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.counterBtn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border);
+  background: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--dark-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  transition: all var(--transition);
+  line-height: 1;
+}
+
+.counterBtn:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.qty {
+  min-width: 28px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.total {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--black);
+  min-width: 90px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: var(--gray);
+  cursor: pointer;
+  padding: 6px 8px;
+  transition: color var(--transition);
+  flex-shrink: 0;
+  font-family: inherit;
+}
+
+.deleteBtn:hover {
+  color: var(--pink);
+}

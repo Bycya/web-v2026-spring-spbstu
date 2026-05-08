@@ -1,0 +1,285 @@
+.page {
+  background: var(--white);
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #0a1628 0%, #1a3a7c 50%, #0d47a1 100%);
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  min-height: 220px;
+}
+
+.heroText {
+  color: var(--white);
+}
+
+.heroSale {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.heroDiscount {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffe843;
+  margin: 8px 0;
+}
+
+.heroDesc {
+  font-size: 18px;
+  opacity: 0.85;
+  margin-bottom: 24px;
+}
+
+.heroBtn {
+  display: inline-block;
+  background: var(--blue);
+  color: var(--white);
+  padding: 12px 28px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 15px;
+  transition: background var(--transition);
+}
+
+.heroBtn:hover {
+  background: var(--blue-hover);
+}
+
+/* Carousels */
+.content {
+  background: var(--white);
+  padding-bottom: 40px;
+}
+
+.section {
+  padding: 48px 0 0;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.sectionIcon {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.sectionDesc {
+  font-size: 13px;
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.carouselWrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.carouselWindow {
+  flex: 1;
+  overflow: hidden;
+}
+
+.carouselTrack {
+  display: flex;
+  transition: transform 0.35s ease;
+}
+
+.slideWrapper {
+  flex: 0 0 calc(100% / 3);
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+.slide {
+  background: var(--light-gray);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: default;
+}
+
+.slideImgWrap {
+  position: relative;
+  background: var(--white);
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.slideImg {
+  max-height: 140px;
+  object-fit: contain;
+}
+
+.badgeHit {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--pink);
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 3px 10px;
+}
+
+.badgeNew {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--green);
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 3px 10px;
+}
+
+.slideInfo {
+  padding: 12px 16px 16px;
+}
+
+.slidePrice {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 4px;
+}
+
+.slideTitle {
+  font-size: 13px;
+  color: var(--dark-gray);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.slideRating {
+  font-size: 13px;
+  color: var(--dark-gray);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.star {
+  color: #f5c518;
+}
+
+.arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  background: var(--white);
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition);
+  flex-shrink: 0;
+  color: var(--black);
+}
+
+.arrow:hover:not(:disabled) {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* Advantages */
+.advantages {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.advTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.advGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.advCard {
+  background: var(--light-gray);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.advIcon {
+  font-size: 32px;
+}
+
+.advText {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Contacts */
+.contacts {
+  margin-top: 48px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+  margin-bottom: 40px;
+}
+
+.contactsTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.contactsGrid {
+  display: flex;
+  gap: 40px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: var(--dark-gray);
+}
+
+.contactIcon {
+  font-size: 20px;
+}

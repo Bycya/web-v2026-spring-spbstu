@@ -1,0 +1,79 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 32px;
+  max-width: 380px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 24px;
+  color: var(--gray);
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: color var(--transition);
+}
+
+.close:hover { color: var(--black); }
+
+.text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--black);
+  margin-bottom: 24px;
+  padding-right: 24px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.btnCancel {
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--pink);
+  font-family: inherit;
+  transition: opacity var(--transition);
+}
+
+.btnCancel:hover { opacity: 0.7; }
+
+.btnConfirm {
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  font-family: inherit;
+  transition: background var(--transition);
+}
+
+.btnConfirm:hover { background: var(--blue-hover); }

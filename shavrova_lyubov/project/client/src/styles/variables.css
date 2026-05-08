@@ -1,0 +1,23 @@
+:root {
+  --blue: #005BFF;
+  --blue-hover: #0047CC;
+  --blue-dark: #1a2d6b;
+  --pink: #FF4AA2;
+  --pink-hover: #e0389a;
+  --green: #37C166;
+  --black: #121212;
+  --dark-gray: #4a4a4a;
+  --gray: #8D8D8D;
+  --light-gray: #F5F5F5;
+  --border: #E5E5E5;
+  --white: #FFFFFF;
+  --red-error: #e53935;
+
+  --container: 1200px;
+  --radius: 16px;
+  --radius-sm: 8px;
+  --transition: 0.2s ease;
+
+  --shadow: 0 2px 16px rgba(0,0,0,0.08);
+  --shadow-hover: 0 4px 24px rgba(0,0,0,0.14);
+}

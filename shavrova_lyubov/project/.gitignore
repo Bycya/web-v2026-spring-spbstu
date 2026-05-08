@@ -1,0 +1,41 @@
+# Зависимости (устанавливаются через npm install)
+node_modules/
+
+# Сборка клиента
+client/dist/
+client/dist-ssr/
+
+# Системные файлы
+.DS_Store
+
+# Логи
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Локальные env-файлы
+.env
+.env.local
+.env.*.local
+
+# Неиспользуемые варианты шрифта (используются только Regular/Medium/SemiBold/Bold)
+client/src/assets/fonts/Rubik/static/Rubik-Black.ttf
+client/src/assets/fonts/Rubik/static/Rubik-BlackItalic.ttf
+client/src/assets/fonts/Rubik/static/Rubik-BoldItalic.ttf
+client/src/assets/fonts/Rubik/static/Rubik-ExtraBold.ttf
+client/src/assets/fonts/Rubik/static/Rubik-ExtraBoldItalic.ttf
+client/src/assets/fonts/Rubik/static/Rubik-Italic.ttf
+client/src/assets/fonts/Rubik/static/Rubik-Light.ttf
+client/src/assets/fonts/Rubik/static/Rubik-LightItalic.ttf
+client/src/assets/fonts/Rubik/static/Rubik-MediumItalic.ttf
+client/src/assets/fonts/Rubik/static/Rubik-SemiBoldItalic.ttf
+
+# Вариативные шрифты (не используются, есть статичные варианты)
+client/src/assets/fonts/Rubik/Rubik-VariableFont_wght.ttf
+client/src/assets/fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf
+client/src/assets/fonts/Rubik/OFL.txt
+client/src/assets/fonts/Rubik/README.txt
+
+# Ассеты шаблона Vite (не используются в проекте)
+client/src/assets/react.svg
+client/src/assets/vite.svg
